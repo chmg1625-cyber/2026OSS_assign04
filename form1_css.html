@@ -22,14 +22,6 @@
             padding: 25px 35px;
         }
 
-
-        .header_table {
-            width: 100%;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #235d9f;
-            padding-bottom: 10px;
-        }
-
         fieldset {
             border: 1px solid #c9d5e0;
             border-radius: 6px;
@@ -60,7 +52,6 @@
         .inline-label {
             width: auto;
             margin-right: 15px;
-            cursor: pointer;
         }
 
 
@@ -70,7 +61,6 @@
             border: 1px solid #bcc7d2;
             border-radius: 4px;
             font-size: 13px;
-            color: #333333;
             background-color: #ffffff;
         }
 
@@ -80,7 +70,7 @@
             border: 1px solid #bcc7d2;
             border-radius: 4px;
             font-size: 13px;
-            color: #333333;
+
             background-color: #ffffff;
         }
 
@@ -90,7 +80,7 @@
             border: 1px solid #bcc7d2;
             border-radius: 4px;
             font-size: 13px;
-            color: #333333;
+
             background-color: #ffffff;
         }
 
@@ -100,7 +90,7 @@
             border: 1px solid #bcc7d2;
             border-radius: 4px;
             font-size: 13px;
-            color: #333333;
+
             background-color: #ffffff;
         }
 
@@ -110,46 +100,12 @@
             border: 1px solid #bcc7d2;
             border-radius: 4px;
             font-size: 13px;
-            color: #333333;
             background-color: #ffffff;
-        }
-
-        textarea {
             width: 95%;
             height: 80px;
             resize: vertical;
-            display: block;
+            display: flex;
             margin-top: 6px;
-        }
-
-        input[type="text"]:focus {
-            outline: none;
-            border-color: #2b72c4;
-            background-color: #f0f6ff;
-        }
-
-        input[type="password"]:focus {
-            outline: none;
-            border-color: #2b72c4;
-            background-color: #f0f6ff;
-        }
-
-        input[type="date"]:focus {
-            outline: none;
-            border-color: #2b72c4;
-            background-color: #f0f6ff;
-        }
-
-        select:focus {
-            outline: none;
-            border-color: #2b72c4;
-            background-color: #f0f6ff;
-        }
-
-        textarea:focus {
-            outline: none;
-            border-color: #2b72c4;
-            background-color: #f0f6ff;
         }
 
         .button-area {
@@ -162,7 +118,6 @@
             font-size: 14px;
             font-weight: bold;
             border-radius: 4px;
-            cursor: pointer;
             margin: 0 5px;
             display: inline-block;
         }
@@ -172,7 +127,6 @@
             font-size: 14px;
             font-weight: bold;
             border-radius: 4px;
-            cursor: pointer;
             margin: 0 5px;
             display: inline-block;
         }
@@ -183,18 +137,10 @@
             border: 1px solid #1f5697;
         }
 
-        input[type="submit"]:hover {
-            background-color: #1e528f;
-        }
-
         input[type="reset"] {
             background-color: #e9ecef;
             color: #495057;
             border: 1px solid #ced4da;
-        }
-
-        input[type="reset"]:hover {
-            background-color: #dde2e6;
         }
     </style>
 </head>
@@ -226,7 +172,8 @@
 
                 <div class="form-row">
                     <label for="user_pw">비밀번호:</label>
-                    <input type="password" id="user_pw" name="user_pw" minlength="8" maxlength="12" placeholder="비밀번호 입력" required>
+                    <input type="password" id="user_pw" name="user_pw" minlength="8" maxlength="12"
+                        placeholder="비밀번호 입력" required>
                     <p style="font-size: 10px; color:red">*최소 8자 이상, 최대 12글자 이하</p>
                 </div>
 
